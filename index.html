@@ -15,7 +15,8 @@
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <h1>FEWD 34</h1>
-      <a href="#contents">Contents</a>
+      <a href="#contents">Contents</a> &middot;
+      <a target="_blank" href="https://docs.google.com/forms/d/1p3yWK3f-Ub_tJCSDr3qlM0t0Q8rtQRx8b5uxnaTmrMU/viewform">Exit Tickets</a>
     </div>
   </nav>
   <div class="container content">
@@ -26,10 +27,7 @@
       Sandi (<a href="mailto:sandima.job@gmail.com">sandima.job@gmail.com</a>).
     </p>
 
-    <h2 id="contents">Contents:</h2>
     <ul>
-      <li><a target="_blank" href="https://docs.google.com/forms/d/1p3yWK3f-Ub_tJCSDr3qlM0t0Q8rtQRx8b5uxnaTmrMU/viewform">Exit Tickets</a></li>
-
       <!-- <li>
         <a href="#week-10">Week 10</a>
       </li>
@@ -53,10 +51,10 @@
       </li>
       <li>
         <a href="#week-3">Week 3</a>
-      </li>
+      </li> -->
       <li>
         <a href="#week-2">Week 2</a>
-      </li> -->
+      </li>
       <li>
         <a href="#week-1">Week 1</a>
       </li>
@@ -658,37 +656,40 @@
       <li>Horizontal width in <code>px</code> using the <code>width</code> property</li>
       <li>Proportional sizing using the <code>flex</code> property.  Elements with a <code>flex</code> value will get a proportion of the entire remaining width of the parent element based on the ratio of it's flex value to those of all other child elements with a <code>flex</code> property</li>
     </ul>
+    -->
 
     <h2 id="week-2">Week 2</h2>
 
     <h3>
-      Homework:
-      <a target="_blank" href="https://www.schoology.com/assignment/256861994/info">
-        Acme Anvil Co.
-      </a>
+      Homework: ACME Corp
     </h3>
 
     <p>
-      Build the homepage for Acme Anvil Corporation. Design for the page is provided in the assignment.
-      <br>
-      Remember to push your work to GitHub then submit a link to your page on Schoology.
+      Build the homepage for Acme Anvil Corporation. It should end up looking like this:
     </p>
+
+    <p>
+      Avand still needs to post:
+    </p>
+
+    <ul>
+      <li>Working profile page (sorry we didn't get to this in class!)</li>
+      <li>Tips for homework and image</li>
+    </ul>
 
     <h3>Resources</h3>
 
     <ul>
+      <li><a href="http://cloud.avandamiri.com/image/321P3C1g3k1f">Picture of HTML pop quiz whiteboard</a></li>
       <li><a href="http://www.csszengarden.com/">CSS Zen Garden</a></li>
       <li><a href="http://learnlayout.com">Learn Layout</a></li>
-      <li><a href="http://caniuse.com/">Can I Use?</a></li>
-      <li><a href="http://learn.shayhowe.com/">Learn from Shay Howe</a></li>
-      <li><a href="http://www.w3.org/TR/html5/">W3C HTML5 Specification</a></li>
+      <li><a href="http://learn.shayhowe.com/">Learn from Shay Howe (my friend in Chicago)</a></li>
       <li><a href="homework/week-1.html">Solution to Homework 1, Whales</a></li>
       <li>
-        MDN (also) has a <strong>great</strong>
         <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">
-          CSS reference
-        </a>
-        for all the styling properties used on the web. Here's some you'll probably use a lot:
+          MDN CSS reference
+        </a>:
+
         <ul>
           <li>
             <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/background">background</a>
@@ -728,16 +729,20 @@
     </ul>
 
     <h3>Submitting Homework</h3>
+
     <ul>
       <li>Create a folder in your GitHub repo for homework. (maybe call it "homework")</li>
       <li>Put your homework files in the homework folder</li>
       <li>Commit and sync your changes to GitHub</li>
-      <li>Create a text file containing a link to your published page, for example: <a target="_blank" href="http://avand.github.io/fewd-30/profile.html">http://avand.github.io/fewd-30/profile.html</a></li>
-      <li>Post this file to Schoology as your homework submission</li>
     </ul>
 
-    <h3>Things on a web page outside the document itself...</h3>
-    <p>There are a bunch of things that make up a web page aside from the actual document content itself.  Stuff like...</p>
+    <h3>&lt;head&gt;</h3>
+
+    <p>
+      There are a bunch of things that make up a web page aside from the actual
+      document content itself. Stuff like:
+    </p>
+
     <ul>
       <li>Window/Tab/Page title</li>
       <li>Description</li>
@@ -745,55 +750,51 @@
       <li>Javascript files</li>
       <li>CSS files</li>
     </ul>
-    <p>
-      <span>Generally speaking, metadata goes in the <code>&lt;head&gt;</code> tag, and page content goes in the <code>&lt;body&gt;</code> tag.</span>
-    </p>
-
-    <h3>Ways to style your HTML</h3>
-
-    <ul>
-      <li>
-        'Inline styling' with the <code>style</code> attribute. In most cases, this is the wrong way to style your web page, but can be handy for testing things out.
-        </br><strong>example:</strong> <code>&lt;footer style="text-align:center;"&gt;&lt;/footer&gt;</code>
-      </li>
-      <li>
-        Embedding styling rules in your HTML page in a <code>&lt;style&gt;</code> tag.  This can work for small pages, but is usually not preferred.
-        </br><strong>example:</strong> <code>&lt;style&gt;footer { text-align:center; }&lt;/style&gt;</code>
-      </li>
-      <li>
-        Linking to a CSS file that contains your styling rules using a <code>&lt;link&gt;</code> tag.  This is usually the best thing to do as it separates your style completely from your markup.
-        </br><strong>example:</strong> <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>
-      </li>
-    </ul>
 
     <p>
-      <strong>IMPORTANT NOTE!</strong> Inline styles take precedence over styling rules.  Still, you probably shouldn't use them.
+      Generally speaking, metadata goes in the <code>&lt;head&gt;</code> tag,
+      and page content goes in the <code>&lt;body&gt;</code> tag.
     </p>
 
-    <h3>Positioning Elements with CSS</h3>
+    <h3>Positioning </h3>
+
     <p>
-      When you use anything other that "static" (the default value for position), you'll be able to use the properties "top", "right", "bottom" and "left" to adjust your elements position, but how it is positioned depends on what value you set position to:
+      When you use anything other that `static` (the default value for position),
+      you'll be able to use the properties `top`, `right`, `bottom` and `left` to
+      adjust your elements position, but how it is positioned depends on what
+      value you set position to:
     </p>
+
     <ul>
       <li>
         <code>position: static;</code>
-        <p>positions based on the content; cannot be adjusted and it's the default value for position for all elements (you probably don't need to know that, but can use it to sound cool at parties)</p>
+        <p>
+          Positions based on the content; cannot be adjusted and it's the default
+          value for position for all elements (you probably don't need to know that,
+          but can use it to sound cool at parties).
+        </p>
       </li>
       <li>
         <code>position: relative;</code>
-        <p>positions relative to where it normally is</p>
+        <p>
+          Positions relative to where it normally is.
+        </p>
       </li>
       <li>
         <code>position: absolute;</code>
-        <p>like "fixed", but positions with respect to the element's nearest relative container</p>
+        <p>
+          "Absolute children have relative parents!" An absolute child element will be positioned
+          relative to it's parent (the one that has `position: relative`).
+        </p>
       </li>
       <li>
         <code>position: fixed;</code>
-        <p>positions with respect to the browser window (useful for sticky headers and stuff)</p>
+        <p>
+          Positions with respect to the browser window (useful for sticky headers and stuff).
+          Use with caution because it will probably cover text!
+        </p>
       </li>
     </ul>
-
-    -->
 
     <h2 id="week-1">Week 1</h2>
 
