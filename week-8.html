@@ -1,0 +1,89 @@
+<h2 id="week-8">Week 8</h2>
+
+<h3>Resources</h3>
+
+<ul>
+  <li><a href="xhr.html">Working movie search</a></li>
+</ul>
+
+<h3>jQuery</h3>
+
+<p>jQuery is a powerful, widely used library that makes a lot of common practices in javascript web development a bit easier.  Here are some examples of how you can use jQuery for some common things we've already done:</p>
+
+<table class="table">
+  <tr>
+    <th></th>
+    <th>Vanilla JS</th>
+    <th>jQuery</th>
+  </tr>
+  <tr>
+    <th>xhr</th>
+    <td>see get function below...</td>
+    <td><code>$.get(url, success);</code></td>
+  </tr>
+  <tr>
+    <th>get element</th>
+    <td><code>var span = document.querySelector('span');</code></td>
+    <td><code>var span = $('span').first();</code></td>
+  </tr>
+  <tr>
+    <th>create element</th>
+    <td><code>var a = document.createElement('a');</code></td>
+    <td><code>var a = $('&lt;a&gt;');</code></td>
+  </tr>
+  <tr>
+    <th>add child</th>
+    <td><code>span.appendChild(a);</code></td>
+    <td><code>span.append(a);</code></td>
+  </tr>
+  <tr>
+    <th>get text</th>
+    <td><code>var linkText = a.textContent;</code></td>
+    <td><code>var linkText = a.text();</code></td>
+  </tr>
+  <tr>
+    <th>set text</th>
+    <td><code>a.textContent = linkText;</code></td>
+    <td><code>a.text(linkText);</code></td>
+  </tr>
+  <tr>
+    <th>get attribute</th>
+    <td><code>a.getAttribute('href');</code></td>
+    <td><code>a.attr('href');</code></td>
+  </tr>
+  <tr>
+    <th>set attribute</th>
+    <td><code>a.setAttribute('href', 'http://wikipedia.org/');</code></td>
+    <td><code>a.attr('href', 'http://wikipedia.org/');</code></td>
+  </tr>
+  <tr>
+    <th>add event listener</th>
+    <td><code>a.addEventListener('click', function() { console.log('click') };</code></td>
+    <td><code>a.on('click', function() { console.log('click') };</code></td>
+  </tr>
+</table>
+
+<p>The easiest way to add jQuery to your page is by adding the following script tag to your HTML (put this tag before your own scripts):</p>
+
+<pre><code>&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">&lt;/script></code></pre>
+
+<h3>XMLHttpRequest</h3>
+
+<p><code>XMLHttpRequest</code> (or XHR) is another javascript object that a browser provides.  It is used for retrieving data from a URL for use in your code.</p>
+
+<p>The following function uses <code>XMLHttpRequest</code> to get data from a url and then passes the data to another function to handle on success:</p>
+
+<pre><code>function get(url, success) {
+  var xhr = new XMLHttpRequest();
+
+  xhr.addEventListener("readystatechange", function() {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      success(JSON.parse(xhr.response));
+    }
+  });
+
+  xhr.open("GET", url);
+  xhr.send();
+}</code></pre>
+
+<p>The above code is handy for getting some data from a URL (for example, the <a href="http://www.reddit.com/dev/api">Reddit JSON API</a>) to do something with in your final project!</p>
