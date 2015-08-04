@@ -1,35 +1,15 @@
-.navbar {
-  background-color:white;
-  opacity:0.95;
+.progress-bar {
+  height: 20px;
+  background-color: #ccc;
+  margin-bottom: 1em;
 }
 
-.navbar .container {
-  border-bottom: 1px solid #808080;
+.progress-bar-indicator {
+  background-color: red;
+  height: 100%;
 }
 
-.navbar .container h1 {
-  display:inline-block;
-  margin-top:10px;
-  padding-right:10px;
-}
-
-.navbar .container a {
-  display:none;
-}
-
-h2:before { 
-  display: block; 
-  content: " "; 
-  height: 60px;
-  margin-top: -60px;
-  visibility: hidden; 
-}
-
-@media (min-width: 980px) {
-  .content {
-    padding-top:80px;
-  }
-  .navbar .container a {
-    display:inline;
-  }
+.name {
+  display: inline-block;
+  min-width: 100px;
 }

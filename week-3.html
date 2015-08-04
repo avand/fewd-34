@@ -1,0 +1,93 @@
+<h2 id="week-3">Week 3</h2>
+
+<h3>
+  Homework:
+  <a target="_blank" href="https://www.schoology.com/assignment/261767240/info">
+    Acme Anvil Co. Continued
+  </a>
+</h3>
+
+<p>
+  Build more pages for Acme Anvil Corporation. Designs for the pages are provided in the assignment.
+</p>
+
+<h3>Resources</h3>
+
+<ul>
+  <li><a href="https://github.com/avand/fewd-30/archive/gh-pages.zip">Homework Solution</a></li>
+  <li><a href="http://acme.com/catalog/acme.html">Illustrated Catalog of ACME Products</a></li>
+  <li><a href="https://github.com/avand/fewd-30/blob/gh-pages/quizes/week-3.html">CSS Quiz!!!</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">Position according to MDN</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display">Display according to MDN</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">MDN's list of CSS pseudo-classes</a></li>
+  <li><a href="http://necolas.github.io/normalize.css/">Normalize CSS</a></li>
+  <li><a href="https://www.schoology.com/system/files/attachments/files/m/201504/course/252050260/classes-ids_552607aaa712c.zip">In-class Exercise on Classes and Ids</a></li>
+  <li><a href="https://www.schoology.com/system/files/attachments/files/m/201504/course/252050260/layout-intro_552607bcef399.zip">In-class Exercise on CSS Layouts</a></li>
+  <li><a href="http://blog.teamtreehouse.com/flexbox-next-generation-css-layout-arrived">Flexbox Introduction</a></li>
+  <li><a href="http://flexboxin5.com/">Flexbox Tour/demo</a></li>
+  <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Authoritative reference guide on flexbox</a></li>
+  <li><a href="http://alistapart.com/article/css-positioning-101">Absolute Positioning Tutorial</a></li>
+</ul>
+
+<h3>CSS selectors</h3>
+
+<p>CSS selectors are how you get things on the page to style them in your CSS. There are a few basic ways to do this:</p>
+
+<ul>
+  <li>by element: <code>a {color: red;}</code></li>
+  <li>by class: <code>.danger {color: red;}</code></li>
+  <li>by id: <code>#warning-message {color: red;}</code></li>
+</ul>
+
+<p>When it comes to ids and classes, remember:</p>
+
+<ul>
+  <li>An id should only appear once on the page.  Ids should be unique and elements can only have one id.</li>
+  <li>Classes may be applied to many elements on the page.</li>
+  <li>Elements <strong>can</strong> have many classes!</li>
+</ul>
+
+<p>Select on multiple things on a single element by chaining selectors together without a space, for example: <code>a.danger.btn {color: red;}</code></p>
+
+<h3>Descendant CSS selectors</h3>
+
+<p>You can select nested elements by putting a space between selectors. For example: <code>header a</code> selects all the <code>&lt;a&gt;</code> tags in the header.</p>
+
+<p>Some rules of thumb when nesting CSS selectors:</p>
+
+<ul>
+  <li>Keep it shallow! Deeply nested selectors can get confusing.</li>
+  <li>Omit any unnecessary selectors.  Keep it as simple as possible!</li>
+</ul>
+
+<h3>Pseudo-selectors!</h3>
+
+<p>Pseudo-selectors allow you to create CSS selectors that select elements based on a particular state of that element (called pseudo-classes).  They are denoted by a colon.  For example: <code>a:hover</code> selects the <code>&lt;a&gt;</code> tags that are currently being hovered over by the cursor.</p>
+
+<p>A list of all the available pseudo-classes is available on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">MDN</a>.</p>
+
+<p>Some rules of thumb when using pseudo-selectors:</p>
+
+<ul>
+  <li>Use them sparingly! If you're uncertain, you probably don't need it.</li>
+  <li>Don't get too clever -- It's really easy for pseudo-selectors to get confusing!</li>
+</ul>
+
+<h3>CSS Layouts</h3>
+
+<p>The way we've managed CSS layouts has evolved over the years.  In chronological order:</p>
+
+<ul>
+  <li><strong>Tables:</strong> using the <code>&lt;table&gt;</code> tag, you can create columns and rows.  This (sort of) allows you to manage complex layouts, but it's really clunky and has some limitations</li>
+  <li><strong>Floats:</strong> using the CSS property <code>float:left;</code> or <code>float:right;</code> pulls elements out of the layout flow.  This has been used to create column layouts, but floating has some idiosyncrasies that require proactive management. Floated elements must be "cleared", and this can cause problems.</li>
+  <li><strong>Flexbox:</strong> using the CSS property <code>display:flex;</code> is the modern way to manage complex layouts with CSS.  It allows you to flexibly size child elements using some special CSS properties such as <code>flex</code>.  You can find more info at <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes">MDN</a>.</li>
+</ul>
+
+<p>There are 3 ways to set child width when using <code>display:flex;</code>:</p>
+
+<ul>
+  <li>By default the element will be the width of the content inside it</li>
+  <li>Horizontal width in <code>px</code> using the <code>width</code> property</li>
+  <li>Proportional sizing using the <code>flex</code> property.  Elements with a <code>flex</code> value will get a proportion of the entire remaining width of the parent element based on the ratio of it's flex value to those of all other child elements with a <code>flex</code> property</li>
+</ul>
+-->
