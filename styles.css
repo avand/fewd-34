@@ -1,14 +1,3 @@
-.progress-bar {
-  height: 20px;
-  background-color: #ccc;
-  margin-bottom: 1em;
-}
-
-.progress-bar-indicator {
-  background-color: red;
-  height: 100%;
-}
-
 .name {
   display: inline-block;
   min-width: 100px;
