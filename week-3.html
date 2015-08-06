@@ -21,11 +21,6 @@
   <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display">Display according to MDN</a></li>
   <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">MDN's list of CSS pseudo-classes</a></li>
   <li><a href="http://necolas.github.io/normalize.css/">Normalize CSS</a></li>
-  <li><a href="https://www.schoology.com/system/files/attachments/files/m/201504/course/252050260/classes-ids_552607aaa712c.zip">In-class Exercise on Classes and Ids</a></li>
-  <li><a href="https://www.schoology.com/system/files/attachments/files/m/201504/course/252050260/layout-intro_552607bcef399.zip">In-class Exercise on CSS Layouts</a></li>
-  <li><a href="http://blog.teamtreehouse.com/flexbox-next-generation-css-layout-arrived">Flexbox Introduction</a></li>
-  <li><a href="http://flexboxin5.com/">Flexbox Tour/demo</a></li>
-  <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Authoritative reference guide on flexbox</a></li>
   <li><a href="http://alistapart.com/article/css-positioning-101">Absolute Positioning Tutorial</a></li>
 </ul>
 
@@ -34,20 +29,18 @@
 <p>CSS selectors are how you get things on the page to style them in your CSS. There are a few basic ways to do this:</p>
 
 <ul>
-  <li>by element: <code>a {color: red;}</code></li>
-  <li>by class: <code>.danger {color: red;}</code></li>
-  <li>by id: <code>#warning-message {color: red;}</code></li>
+  <li>by element: <code>a { color: red; }</code></li>
+  <li>by class: <code>.danger { color: red; }</code></li>
 </ul>
 
-<p>When it comes to ids and classes, remember:</p>
+<p>Remember:</p>
 
 <ul>
-  <li>An id should only appear once on the page.  Ids should be unique and elements can only have one id.</li>
   <li>Classes may be applied to many elements on the page.</li>
   <li>Elements <strong>can</strong> have many classes!</li>
 </ul>
 
-<p>Select on multiple things on a single element by chaining selectors together without a space, for example: <code>a.danger.btn {color: red;}</code></p>
+<p>Select on multiple things on a single element by chaining selectors together without a space, for example: <code>a.danger.btn { color: red; }</code></p>
 
 <h3>Descendant CSS selectors</h3>
 
@@ -82,12 +75,3 @@
   <li><strong>Floats:</strong> using the CSS property <code>float:left;</code> or <code>float:right;</code> pulls elements out of the layout flow.  This has been used to create column layouts, but floating has some idiosyncrasies that require proactive management. Floated elements must be "cleared", and this can cause problems.</li>
   <li><strong>Flexbox:</strong> using the CSS property <code>display:flex;</code> is the modern way to manage complex layouts with CSS.  It allows you to flexibly size child elements using some special CSS properties such as <code>flex</code>.  You can find more info at <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes">MDN</a>.</li>
 </ul>
-
-<p>There are 3 ways to set child width when using <code>display:flex;</code>:</p>
-
-<ul>
-  <li>By default the element will be the width of the content inside it</li>
-  <li>Horizontal width in <code>px</code> using the <code>width</code> property</li>
-  <li>Proportional sizing using the <code>flex</code> property.  Elements with a <code>flex</code> value will get a proportion of the entire remaining width of the parent element based on the ratio of it's flex value to those of all other child elements with a <code>flex</code> property</li>
-</ul>
--->
