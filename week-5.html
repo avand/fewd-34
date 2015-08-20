@@ -59,13 +59,26 @@
       <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent">textContent</a></li>
       <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild">appendChild</a></li>
       <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute">setAttribute</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute">getAttribute</a></li>
     </ul>
   </li>
 </ul>
 
 <p>Here's an example of how you could use the functions listed above to add a link to a page:</p>
 
-<pre><code>// get the body element<br>var body = document.querySelector('body');<br><br>// create an anchor element<br>var anchor = document.createElement('a');<br><br>// set the href and text of the anchor element<br>anchor.setAttribute('href', 'http://avandamiri.com/fewd-30/');<br>anchor.textContent = 'FEWD-30';<br><br>// add the anchor element to the body<br>body.appendChild(anchor);</code></pre>
+<pre>
+  <code>
+    // get the body element<br>
+    var body = document.querySelector('body');<br><br>
+    // create an anchor element<br>
+    var anchor = document.createElement('a');<br><br>
+    // set the href and text of the anchor element<br>
+    anchor.setAttribute('href', 'http://avandamiri.com/fewd-30/');<br>
+    anchor.textContent = 'FEWD-34';<br><br>
+    // add the anchor element to the body<br>
+    body.appendChild(anchor);
+  </code>
+</pre>
 
 <h3>Event Handling</h3>
 
@@ -75,4 +88,15 @@
 
 <p>For example, you can create an event handler for button clicks that alerts a message like so:</p>
 
-<pre><code>// get the button element<br>var button = document.querySelector('button');<br><br>// create an event handler<br>function buttonClicked() {<br>&nbsp;&nbsp;alert('Hello World!');<br>}<br><br>// add your event listener<br>button.addEventListener('click', buttonClicked);</code></pre>
+<pre>
+  <code>
+    // get the button element<br>
+    var button = document.querySelector('button');<br><br>
+    // create an event handler<br>
+    function buttonClicked() {<br>
+      &nbsp;&nbsp;alert('Hello World!');<br>
+    }<br><br>
+    // add your event listener<br>
+    button.addEventListener('click', buttonClicked);
+  </code>
+</pre>
