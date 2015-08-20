@@ -170,13 +170,13 @@
 
     function calcCtoF(event) {
       if (tempC.value.length > 0) {
-        tempF.value = calcCelciusToFarenheit(tempC.value)
+        tempF.value = calcCelciusToFahrenheit(tempC.value)
       } else {
         tempF.value = '';
       }
     }
 
-    function calcCelciusToFarenheit(c) {
+    function calcCelciusToFahrenheit(c) {
       return c * (9/5) + 32;
     }
 

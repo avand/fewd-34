@@ -53,7 +53,7 @@ function calcFtoC(event) {
 
 function calcCtoF(event) {
   if (tempC.value.length > 0) {
-    tempF.value = calcCelciusToFarenheit(tempC.value)
+    tempF.value = calcCelciusToFahrenheit(tempC.value)
   } else {
     tempF.value = '';
   }
