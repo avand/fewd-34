@@ -21,9 +21,21 @@ body { font-family: sans-serif; }
   </ol>
 
   <script>
-    function addListItem() {
-      // Your code goes here.
-    }
+  function addListItem() {
+    // 1. prompt for a todo and save the result         --> var text = prompt("What do you need to do today?")
+    // 2. create an li element                          --> document.createElement()
+    // 3. save the ul in a variable                     --> var list = ?
+    // 4. append the li to ul variable                  --> list.appendChild()
+    // 5. set the prompt result to the li's textContent --> item.textContent = ?
+
+    var text = prompt("What do you need to do today?");
+    var list = document.querySelector("#todo-list");
+    var item = document.createElement("li");
+
+    item.textContent = text;
+
+    list.appendChild(item);
+  }
   </script>
 </div>
 
@@ -44,7 +56,17 @@ body { font-family: sans-serif; }
 
   <script>
   function addImage() {
-
+  // When the button is clicked:                      --> already wired up on line 51
+  //  1. prompt for url (& assign result to var)      --> var url = prompt("What's the URL?")
+  //  2. prompt for width (& assign result to var)
+  //  3. prompt for height (& assign result to var)
+  //  4. create img element                           --> var img = document.createElement('img')
+  //  5. set img's src attribute                      --> img.setAttribute(?, ?)
+  //  6. set img's width attribute
+  //  7. set img's height attribute
+  //  8. append img to element identified as #image
+  //     8.1. assign element with selector "#image" to var
+  //     8.2. append img to that element
   }
   </script>
 </div>
@@ -64,7 +86,11 @@ body { font-family: sans-serif; }
 
   <script>
   function makeBold() {
-    // Your code goes here.
+    // When the button is clicked:                                --> already wired up on line 84
+    //  1. assign element with selector "#make-me-bold" to a var
+    //  2. set the element's class attribute to "bold"
+    //  - or -
+    //  2. add the class "bold" using the element's classList
   }
   </script>
 </div>
