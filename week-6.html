@@ -1,33 +1,85 @@
-<h2 id="week-6">Week 6</h2>
+<h1 id="week-6">Week 6</h1>
 
-<h3>
-  Homework:
-  <a target="_blank" href="https://www.schoology.com/assignment/271420220/info">
-    My Favorite Movies
-  </a>
-</h3>
-
-<h3>Resources</h3>
+<h2>Resources</h2>
 
 <ul>
-  <li>Day 2 In-Class Exercises (<a href="http://cloud.avandamiri.com/2R3W2Y0c3E42">Download ZIP</a>)
-    <ul>
-      <li>
-        <a href="arrays.html">Arrays</a>
-        (<a href="arrays-solution.html">Solution</a>)
-      </li>
-      <li>
-        <a href="for-loops.html">For Loops</a>
-        (this is the starting point for the homework 6)
-      </li>
-    </ul>
-  </li>
-  <li><a href="todo-in-class.html">Working Todo List</a></li>
-  <li><a href="todo-pseudo-code.html">Pseudo Code of the Todo List</a></li>
-  <li><a href="js-recipes.html">Common JS recipes</a></li>
-  <li><a href="https://developer.mozilla.org/en-US/docs/Web/Events">the event object according to MDN</a></li>
+  <li><a href="week-5/blog.html">Blog Starting Point</a></li>
 </ul>
 
+<h2>JavaScript Recipes</h2>
+
+<h3>
+  Adding/changing an element's value:
+</h3>
+
+<pre><code>
+// If the element is already on the page:
+var el = document.querySelector("img");
+el.setAttribute("src", "http://example.com/logo.png");
+
+// If the element is NOT on the page (new el):
+var el = document.createElement("img");
+el.setAttribute("src", "http://example.com/logo.png");
+</code></pre>
+
+<h3>
+  Adding/changing an element's textContent:
+</h3>
+
+<pre><code>
+// If the element is already on the page:
+var el = document.querySelector("p");
+el.textContent = "The quick brown fox...";
+
+// If the element is NOT on the page (new el):
+var el = document.createElement("p");
+el.textContent = "The quick brown fox...";
+</code></pre>
+
+<h3>
+  Adding an element to the page with text content
+</h3>
+
+<pre><code>
+// Let's start with something simple:
+var el = document.createElement("li");
+el.textContent = "Go grocery shopping...";
+var parentEl = document.querySelector("ul");
+parentEl.appendChild(el);
+
+// Now, we could move the hard-coded values to variables:
+var name = "li";
+var text = "Go grocery shopping...";
+var parent = "ul";
+
+var el = document.createElement(name);
+el.textContent = text;
+var parentEl = document.querySelector(parent);
+parentEl.appendChild(el);
+
+// That's good, but what we really want is a function.
+// Now, we can addElements whenever we want.
+function addElement(name, parent, text) {
+  var el = document.createElement(name);
+  el.textContent = text;
+  var parentEl = document.querySelector(parent);
+  parentEl.appendChild(el);
+}
+
+addElement("li", "ul", "Go grocery shopping...");
+</code></pre>
+
+<p>
+  In that last example, you could imagine now putting that
+  function in a <code>helpers.js</code> file and reference
+  it from any program:
+</p>
+
+<pre><code>
+&lt;script&gt; src="helpers.js">&lt;/script&gt;
+</code></pre>
+
+<!--
 <h3>Event Handling (continued...)</h3>
 
 <p>When you attach an event handler to an event, it will be called with a special 'event' object as it's first argument (commonly named <code>e</code>).</p>
@@ -86,3 +138,5 @@
 <p>For example, the following code will add a list item to a list for each item in the array <code>instructors</code>:</p>
 
 <pre><code>var instructors = ['Avand', 'Rob', 'Sandi'];<br/>var list = document.querySelector('ul');<br/>var item;<br/><br/>for (var i = 0; i < instructors.length; i++) {<br/>&nbsp;&nbsp;item = document.createElement('li');<br/>&nbsp;&nbsp;item.textContent = instructors[i];<br/>&nbsp;&nbsp;list.appendChild(item);<br/>}</code></pre>
+
+-->
