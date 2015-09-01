@@ -3,6 +3,8 @@
 <h3>Resources</h3>
 
 <ul>
+  <li><a href="week-7/movies.html">Movies Starting Point</a></li>
+  <!--
   <li><a href="http://bit.ly/fewd-finals">Final project ideas</a></li>
   <li><a href="http://gallery.ga.co/">GA final project gallery</a></li>
   <li>
@@ -19,7 +21,54 @@
       </ul>
     </li>
   </li>
+  -->
 </ul>
+
+<h3>Arrays</h3>
+
+<p>In javascript, when we want to store a list of things, we use an object called <code>Array</code>.  Arrays can be created in javascript using square braces (<code>[</code>) like so: <code>['Avand', 'Rob', 'Sandi']</code></p>
+
+<p>Like the other javascript objects we've looked at so far, Arrays have properties and methods that you'll probably find useful:</p>
+
+<ul>
+  <li>
+    properties:
+    <ul>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length">length</a>: a count of the number of items in the array</li>
+    </ul>
+  </li>
+  <li>
+    methods:
+    <ul>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push">push</a>: adds an item to the array</li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop">pop</a>: removes an item from the array</li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort">sort</a>: sorts the items in the array</li>
+    </ul>
+  </li>
+</ul>
+
+<h3>Looping</h3>
+
+<p>
+  In javascript, when we want to execute some code some number of times, we can use the <code>forEach()</code> function.
+</p>
+
+<p>
+  For example, the following code will add a list item to a list for each item in the array <code>instructors</code>:
+</p>
+
+<pre><code>
+  var instructors = ['Avand', 'Rob', 'Sandi'];<br>
+  var list = document.querySelector('ul');<br><br>
+
+  function listInstructor(instructor) {<br>
+    var item = document.createElement('li');<br>
+    item.textContent = instructor;<br>
+    list.appendChild(item);
+  }<br><br>
+
+  instructors.forEach(listInstructor);
+</code></pre>
 
 <h3>Conditionals</h3>
 
