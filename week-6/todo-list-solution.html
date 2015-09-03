@@ -9,7 +9,23 @@
 </ul>
 
 <script>
-// Your code goes here.
+var form = document.querySelector("#new-todo-item-form");
+var input = document.querySelector("#new-todo-item-input");
+var list = document.querySelector("#todo-list");
+
+function createItem(todo) {
+  var listItem = document.createElement("li");
+  listItem.textContent = todo;
+  list.appendChild(listItem);
+}
+
+function formSubmitted(event) {
+  event.preventDefault();
+  createItem(input.value);
+  form.reset();
+}
+
+form.addEventListener("submit", formSubmitted);
 </script>
 
 <style>
