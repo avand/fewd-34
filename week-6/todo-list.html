@@ -1,12 +1,12 @@
-<form id="new-todo-item-form">
-  <input type="text" id="new-todo-item-input" placeholder="What do you need to do?">
-  <button type="submit">Create todo</button>
-</form>
+<main>
+  <form id="new-todo-item-form">
+    <input type="text" id="new-todo-item-input" placeholder="What do you need to do?">
+    <button type="submit">Create todo</button>
+  </form>
 
-<hr>
-
-<ul id="todo-list">
-</ul>
+  <ul id="todo-list">
+  </ul>
+</main>
 
 <script>
 // Your code goes here.
@@ -37,11 +37,20 @@
     cursor: pointer;
   }
   input {
-    width: 75%;
+    width: 70%;
   }
   button {
     color: white;
-    width: 24%;
+    width: 28%;
     background-color: #049cd8;
+  }
+  form,
+  ul {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  li {
+    margin-top: 0.75em;
+    padding-top: 0.75em;
   }
 </style>
