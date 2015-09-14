@@ -110,24 +110,3 @@
 
   cars[0]["name"] // => "Porsche"
 </code></pre>
-
-<h3>XMLHttpRequest</h3>
-
-<p><code>XMLHttpRequest</code> (or XHR) is another javascript object that a browser provides.  It is used for retrieving data from a URL for use in your code.</p>
-
-<p>The following function uses <code>XMLHttpRequest</code> to get data from a url and then passes the data to another function to handle on success:</p>
-
-<pre><code>function get(url, success) {
-  var xhr = new XMLHttpRequest();
-
-  xhr.addEventListener("readystatechange", function() {
-    if (xhr.readyState == 4 && xhr.status == 200) {
-      success(JSON.parse(xhr.response));
-    }
-  });
-
-  xhr.open("GET", url);
-  xhr.send();
-}</code></pre>
-
-<p>The above code is handy for getting some data from a URL (for example, the <a href="http://www.reddit.com/dev/api">Reddit JSON API</a>) to do something with in your final project!</p>
