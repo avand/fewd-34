@@ -3,15 +3,31 @@
 <h3>Resources</h3>
 
 <ul>
-  <!--
-  <li><a href="blog-solution.html">Blog homework solution</a></li>
-  <li><a href="todo-local-storage.html">Todo list with local storage</a></li>
-  <li><a href="acme-corp-responsive/">ACME Corp with responsive (media queries)</a></li>
-  <li><a href="https://www.mapbox.com/signup/">Mapbox API sign up</a></li>
-  <li><a href="http://leafletjs.com/reference.html">Leaflet docs</a></li>
-  <li><a href="maps-in-class.html">completed maps page</a></li>
-  -->
+  <li><a href="week-9/danaan.html">Final project idea: Danaan's eye tracker</a></li>
+  <li><a href="week-9/muriel.html">Final project idea: Muriel's wheel spinner</a></li>
+  <li><a href="week-9/jonathan.html">Final project idea: Jonathan's bookmarklet</a></li>
 </ul>
+
+<h3>Homework Review</h3>
+
+<p>
+  This is the code we wrote together in class. Hopefully,
+  it helps with doing your homework.
+</p>
+
+<pre><code>
+function displayMovie(movie) {
+  // Get the list and append a new list item to it
+  var list = document.querySelector("#movies");
+  var item = document.createElement("li");
+  list.appendChild(item);
+
+  // Create the title element and append it to the list item
+  var title = document.createElement("div");
+  title.textContent = movie.title;
+  item.appendChild(title)
+}
+</code></pre>
 
 <h3>XMLHttpRequest</h3>
 
